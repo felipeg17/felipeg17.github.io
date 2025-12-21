@@ -1,147 +1,194 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Home
+---
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- INSTRUCTIONS ARE TO KEEP IT AS FIRST ITEM INTO THE HEAD -->
-  <script async="" src="./Felipe Gonzalez_ Home_files/js"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-16344709-2');
-  </script>
-
-  <!-- this is the website's name supposed to appear at the explorer's tab and in Google search -->
-  <title>Felipe Gonzalez | Home</title>
-
-  <!-- general meta info description -->
-
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-  <!-- this website's info is supposed to appear at the Google search -->
-  <meta name="author" content="Felipe Gonzalez">
-  <meta name="keywords"
-    content="robot, robotics, science, UNAL, Colombia, Universidad Nacional de Colombia, Laboratorio de Sistemas Inteligentes, LabSIR, learning, control, commencement speech, Python">
-  <meta name="description" content="Felipe Gonzalez PhD student at Universidad Nacional de Colombia (UNAL)">
-
-  <!-- there's something called open graph (og) that is used for attachments -->
-  <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-  <!-- include css style sheets -->
-  <link rel="stylesheet" type="text/css" href="./Felipe Gonzalez_ Home_files/style.css">
-  <link rel="alternate" type="application/rss+xml"
-    title="Felipe Gonzalez - Felipe Gonzalez is a PhD candidate at Universidad Nacional de Colombia"
-    href="https://felipegonzalez.github.io/feed.xml">
-</head>
-
-<body>
-  <div class="wrapper-masthead">
-    <div class="container">
-      <header class="masthead clearfix">
-        <!--a href="/" class="site-avatar"><img src="/images/404.jpg" /></a-->
-
-        <div class="site-info">
-          <h1 class="site-name"><a href="https://felipeg17.github.io/index.html">Felipe Gonzalez Roldan</a></h1>
-          <!-- <p class="site-description">Felipe Gonzalez is a PhD Student at Universidad Nacional de Colombia (UNAL)</p> -->
-          <p class="site-description"></p>
-        </div>
-
-        <nav>
-          <a href="https://felipeg17.github.io/index.html">Home</a>
-          <a href="https://felipeg17.github.io/portafolio.html">Portfolio</a>
-          <a href="https://felipeg17.github.io/publications.html">Publications</a>
-          <a href="https://felipeg17.github.io/cv.html">CV</a>
-          <a href="https://felipeg17.github.io/contactv2.html">Contact</a>
-        </nav>
-      </header>
+<div class="home">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img
+          src="{{ site.baseurl }}/assets/images/felipe_home.jpeg"
+          alt="Felipe Gonzalez Roldan"
+          class="profile-photo"
+        />
+      </div>
+      <div class="hero-text">
+        <h2 class="hero-title">
+          Mechatronics - Software Developer - AI Enthusiast
+        </h2>
+        <p class="intro">
+          Mechatronics Engineer with a Master's in Industrial Automation and 8+
+          years of experience in technology projects, innovation, and teaching.
+          Proven skills in robotics, software development, AI, innovation,
+          education. Dedicated to continuous improvement and persistent effort.
+        </p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div id="main" role="main" class="container">
-    <div class="posts">
-      <!-- THIS IS THE LEFT TAB -->
-      <div class="left" style="float:left">
-        <!-- image -->
-        <img src="./Felipe Gonzalez_ Home_files/felipe_home.jpeg" alt="felipe-home" border="0">
-        <!--<a href="https://ibb.co/WKdZpVG"><img src="Felipe Gonzalez_ Home_files/felipe-home.jpg" alt="felipe-home" border="0"></a>-->
-
-        <!-- news list -->
-        <h3>Latest News</h3>
-        <p style="margin: -15px;"></p>
-        <div class="ex3">
-          <font size="2.5">
-            <font color="red"> Feb. 7, 2021 </font>
-            &nbsp;&nbsp;&nbsp;
-            <div class="justify"> An article has been accepted for publication in Sensors.</div>
-            <p style="margin: 5px;"></p>
-          </font>
+  <!-- Tech Stack -->
+  <section class="tech-stack">
+    <div class="tech-categories">
+      <div class="tech-category">
+        <h3>Languages</h3>
+        <div class="tech-badges">
+          <span class="tech-badge">🐍 Python</span>
+          <span class="tech-badge">🔷 Golang</span>
+          <span class="tech-badge">📊 MATLAB</span>
+          <span class="tech-badge">🗃️ SQL</span>
         </div>
       </div>
-
-      <!-- THIS IS THE RIGHT TAB -->
-      <div class="right" style="float:right">
-        <p style="margin: -30px;"></p>
-        <h1>Short Biography</h1>
-        <p style="text-align:justify">I am a PhD student at <a href="https://unal.edu.co" class="body">Universidad
-          Nacional de Colombia (UNAL)</a>. My doctoral project is the development of an integrated motion planning 
-        strategy for a robot arm to solve a multi-object picking motion query in a controlled environment.</p>
-
-        <p style="text-align:justify"><p style="text-align:justify">I was born in Bogotá, Capital city of Colombia. 
-          My interest in engineering started in childhood. I was always amazed to see robots in tv shows, cars on highways, 
-          and simple appliances at home. I got my BSc in Mechatronics Engineering from UNAL. While studying for my degree, 
-          I joined a research group called UNRobot, using the knowledge I acquired there, I designed in detail a delta robot 
-          for my thesis, which was later built based on my proposal. Subsequently, I obtained an automatic admission for 
-          the MSc in Industrial Automation at the same University. My master's thesis was related to trajectory optimization 
-          for a 6 DOF industrial robot using metaheuristic algorithms.</p>
-
-          <p style="text-align:justify">In the professional scenario, I worked as a research and development engineer for
-            <a href="http://www.colsein.com.co">Colsein</a>, one of the largest suppliers of automation spare parts in
-            Colombia. I was part of the team responsible for designing and implementing a 3D laser scanner 
-            used in tank gauging and building reconstruction through point clouds. Moreover, I was an assistant professor
-            at the UNAL. At the same time, I worked as a collaborator in the <a
-              href="https://www.youtube.com/channel/UClAwKwv8dBVwBWZq7Fis3Dw/featured">Laboratorio de Sistemas
-              Inteligentes Robotizados</a>. Since 2018 I've been a full-time professor in different universities dictating
-            the subjects of Industrial Robotics, Robotic Platforms, Actuators, Deepening Elective (programming in Matlab)
-            and Fundations of Automation and Robotics. I have also carried out research activities through degree projects 
-            and support to seedbeds.
-          </p>
-
-        <p style="text-align:justify">Still curious about my professional profile? Have a look at my <a
-            href="https://felipeg17.github.io/portafolio.html">portfolio</a>, <a
-            href="https://felipeg17.github.io/cv.html">CV</a>, <a
-            href="https://felipeg17.github.io/publications.html">publications</a>, or feel free to <a
-            href="https://felipeg17.github.io/contactv2.html">contact me</a> for further information.</p>
-
-
-        <!-- <h3>Research Interests</h3>
-      Under development...-->
+      <div class="tech-category">
+        <h3>AI & ML</h3>
+        <div class="tech-badges">
+          <span class="tech-badge">🤖 OpenAI API</span>
+          <span class="tech-badge">🔗 LangChain</span>
+          <span class="tech-badge">📝 LangSmith</span>
+          <span class="tech-badge">🕸️ Langgraph</span>
+          <span class="tech-badge">📚 RAG Systems</span>
+          <span class="tech-badge">💾 Vector DBs</span>
+          <span class="tech-badge">☁️ Vertex AI</span>
+        </div>
       </div>
-      <div style="clear:both"></div>
+      <div class="tech-category">
+        <h3>Frameworks & Libraries</h3>
+        <div class="tech-badges">
+          <span class="tech-badge">⚡ FastAPI</span>
+          <span class="tech-badge">🌶️ Flask</span>
+          <span class="tech-badge">🎨 Streamlit</span>
+          <span class="tech-badge">🐼 Pandas</span>
+          <span class="tech-badge">🔍 Selenium</span>
+          <span class="tech-badge">🔌 gRPC</span>
+          <span class="tech-badge">🏥 FHIR</span>
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Cloud & DevOps</h3>
+        <div class="tech-badges">
+          <span class="tech-badge">☁️ AWS</span>
+          <span class="tech-badge">☁️ GCP</span>
+          <span class="tech-badge">🐳 Docker</span>
+          <span class="tech-badge">🗄️ Postgres</span>
+          <span class="tech-badge">⚙️ GitHub Actions</span>
+          <span class="tech-badge">📊 Looker Studio</span>
+          <span class="tech-badge">📱 Apps Script</span>
+          <span class="tech-badge">🤖 ROS</span>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="wrapper-footer">
-    <div class="container">
-      <footer class="footer">
-        <a href="https://twitter.com/felipe_gonza7"><i class="svg-icon twitter"></i></a>
-        &nbsp;
-        <a href="https://www.youtube.com/c/LabSIRUNAL"><i class="svg-icon youtube"></i></a>
-        &nbsp;
-        <a href="https://github.com/felipeg17"><i class="svg-icon github"></i></a>
-        &nbsp;
-        <a href="https://www.linkedin.com/in/felipegonzalezroldan/"><i class="svg-icon linkedin"></i></a>
-        &nbsp;
-        <a href="mailto:fegonzalezro@unal.edu.co"><i class="svg-icon email"></i></a>
-      </footer>
+  </section>
+
+  <!-- Featured Work -->
+  <section class="featured-work">
+    <h3 class="section-subtitle">Personal Projects</h3>
+    <div class="featured-grid">
+      <div class="featured-card">
+        <h4>RAG with Reranking</h4>
+        <p>
+          Question Answer system with context-aware responses using LangChain,
+          ChromaDB, and FastAPI.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge-small">Python</span>
+          <span class="tech-badge-small">LangChain</span>
+          <span class="tech-badge-small">FastAPI</span>
+        </div>
+        <a
+          href="https://github.com/felipeg17/rag-docs"
+          class="project-link"
+          target="_blank"
+          >View on GitHub →</a
+        >
+      </div>
+
+      <div class="featured-card">
+        <h4>RAG Tables Microservice</h4>
+        <p>
+          FastAPI microservice for processing and chatting with table data in
+          CSV and XLSX formats.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge-small">Python</span>
+          <span class="tech-badge-small">FastAPI</span>
+          <span class="tech-badge-small">Pandas</span>
+        </div>
+        <a
+          href="https://github.com/felipeg17/rag-tables"
+          class="project-link"
+          target="_blank"
+          >View on GitHub →</a
+        >
+      </div>
     </div>
-  </div>
 
-</body>
+    <h3 class="section-subtitle">Academic & Professional</h3>
+    <div class="featured-grid">
+      <div class="featured-card">
+        <h4>FRobs_RL - Robotics RL Framework</h4>
+        <p>
+          Open-source Reinforcement Learning library for industrial robots with
+          120+ GitHub stars.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge-small">Python</span>
+          <span class="tech-badge-small">PyTorch</span>
+          <span class="tech-badge-small">ROS</span>
+        </div>
+        <a
+          href="https://github.com/jmfajardod/frobs_rl"
+          class="project-link"
+          target="_blank"
+          >View on GitHub →</a
+        >
+      </div>
 
-</html>
+      <div class="featured-card featured-card-highlight">
+        <h4>📄 Full CV & More Projects</h4>
+        <p>
+          View my complete curriculum vitae and explore all professional,
+          academic, and teaching projects.
+        </p>
+        <div class="cv-links">
+          <a
+            href="{{ site.baseurl }}/assets/files/cv_fgr_2025_eng.pdf"
+            class="project-link"
+            target="_blank"
+            >View CV →</a
+          >
+          <a href="{{ site.baseurl }}/projects/" class="project-link"
+            >All Projects →</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Blog Posts -->
+  <section class="recent-posts">
+    <h3>Latest from the Blog</h3>
+    {% assign sorted_posts = site.posts | sort: 'date' | reverse %} {% if
+    sorted_posts.size > 0 %}
+    <div class="blog-preview-grid">
+      {% for post in sorted_posts limit:2 %}
+      <article class="blog-preview-card">
+        <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+        <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more"
+          >Read more →</a
+        >
+      </article>
+      {% endfor %}
+    </div>
+    <div class="view-all-posts">
+      <a href="{{ site.baseurl }}/blog/" class="btn btn-secondary"
+        >View All Posts</a
+      >
+    </div>
+    {% else %}
+    <p>No blog posts yet. Check back soon!</p>
+    {% endif %}
+  </section>
+</div>
