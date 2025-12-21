@@ -1,0 +1,142 @@
+---
+layout: page
+title: Contact
+---
+
+<style>
+.page h1 {
+  display: none;
+}
+
+.contact-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.contact-card {
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.contact-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.contact-card h3 {
+  font-size: 16px;
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #34495e;
+  line-height: 1.6;
+  margin: 6px 0;
+  text-align: center;
+}
+
+.contact-card a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-card a:hover {
+  color: #2980b9;
+  border-bottom: 2px solid #3498db;
+}
+
+.contact-card small {
+  font-size: 12px;
+  color: #7f8c8d;
+  text-align: center;
+}
+
+.contact-card strong {
+  color: #2c3e50;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="contact-page">
+  <!-- Row 1: Contact Info -->
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <h3>Email</h3>
+      <p><strong>University:</strong></p>
+      <p><a href="mailto:fegonzalezro@unal.edu.co">fegonzalezro@unal.edu.co</a></p>
+      <p><strong>Personal:</strong></p>
+      <p><a href="mailto:fegonzalez17@gmail.com">fegonzalez17@gmail.com</a></p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-icon">📍</div>
+      <h3>Location</h3>
+      <p>Bogotá, Colombia</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-icon">📱</div>
+      <h3>Phone</h3>
+      <p><a href="https://wa.me/573192568436">+57 (319) 256-8436</a></p>
+      <p><small>WhatsApp available</small></p>
+    </div>
+  </div>
+
+  <!-- Row 2: Social Links -->
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-icon">💻</div>
+      <h3>GitHub</h3>
+      <p><strong>Personal:</strong></p>
+      <p><a href="https://github.com/felipeg17" target="_blank">@felipeg17</a></p>
+      <p><strong>Academic:</strong></p>
+      <p><a href="https://github.com/fegonzalez7" target="_blank">@fegonzalez7</a></p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-icon">💼</div>
+      <h3>LinkedIn</h3>
+      <p><a href="https://www.linkedin.com/in/felipegonzalezroldan/" target="_blank">Felipe Gonzalez Roldan</a></p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-icon">🎥</div>
+      <h3>YouTube</h3>
+      <p><a href="https://www.youtube.com/@felipeg17" target="_blank">@felipeg17</a></p>
+    </div>
+  </div>
+</div>

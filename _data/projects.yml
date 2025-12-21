@@ -1,0 +1,135 @@
+professional:
+  - name: "RAG-Based Document Analysis System"
+    period: "2023-2025"
+    company: "Seguros Bolivar"
+    description: "Enterprise-grade RAG application for intelligent document processing and data extraction, handling 500+ documents yearly using LangChain, ChromaDB, and FastAPI."
+    tech: ["Python", "OpenAI API", "ChromaDB", "FastAPI", "LangChain"]
+    featured: true
+
+  - name: "Computer Vision Claims Processing"
+    period: "2023-2024"
+    company: "Seguros Bolivar"
+    description: "Python microservice for automated image risk analysis, processing 5000+ insurance quotations annually with OpenCV and FastAPI deployed on AWS EC2."
+    tech: ["Python", "OpenCV", "FastAPI", "EC2", "Computer Vision"]
+    featured: true
+
+  - name: "Automation Bots & Research Agents"
+    period: "2022-2025"
+    company: "Seguros Bolivar"
+    description: "Developed automation bots handling 2000+ web queries monthly and research agents processing 1000+ publications for business insights."
+    tech: ["Python", "Selenium", "Streamlit", "OpenAI", "Vertex AI"]
+    featured: true
+
+  - name: "3D Laser Scanner for Tank Calibration"
+    period: "2014-2017"
+    company: "Colsein"
+    description: "Co-designed, built, and commissioned a 3D laser scanner for fuel tank gauging, achieving millimeter-resolution 3D models."
+    tech: ["Python", "C", "Point Cloud Processing", "Solidworks"]
+    featured: false
+
+personal:
+  - name: "rag-docs"
+    period: "2024"
+    description: "Question Answer system with context-aware responses from documents in a Retrieval-Augmented Generation pipeline using LangChain, ChromaDB, and FastAPI."
+    tech: ["Python", "LangChain", "ChromaDB", "FastAPI"]
+    github: "https://github.com/felipeg17/rag-docs"
+    featured: true
+
+  - name: "rag-tables"
+    period: "2025"
+    description: "FastAPI-based microservice for processing and chatting with table data in CSV and XLSX formats using RAG techniques."
+    tech: ["Python", "FastAPI", "Pandas", "OpenAI"]
+    github: "https://github.com/felipeg17/rag-tables"
+    featured: true
+
+  - name: "poke-repo"
+    period: "2025"
+    description: "Educational Python repository for learning object-oriented programming concepts using Pokémon. Used by students for OOP practice."
+    tech: ["Python", "OOP", "Education"]
+    github: "https://github.com/felipeg17/poke-repo"
+    stars: 11
+    featured: true
+
+academic:
+  - name: "FRobs_RL - Robotics RL Framework"
+    period: "2021-2022"
+    description: "Flexible Robotics Reinforcement Learning library for generating movements for industrial robots. Developed in Python based on PyTorch and compatible with ROS."
+    tech: ["Python", "PyTorch", "ROS", "Reinforcement Learning", "Gazebo"]
+    github: "https://github.com/jmfajardod/frobs_rl"
+    stars: 120
+    publication: "IEEE CASE 2022"
+    featured: true
+
+  - name: "Machine Vision Grasping Algorithm"
+    period: "2022"
+    description: "Implementation of Generative Grasping CNN (GGCNN) to generate valid grasping poses for industrial robots, followed by trajectory generation for task execution."
+    tech: ["Python", "Computer Vision", "Deep Learning", "ROS"]
+    publication: "Collaborative Pick and Place using industrial robots"
+    featured: true
+
+  - name: "ROS Industrial Robotics Examples"
+    period: "2020-2023"
+    description: "Collection of ROS packages and examples for industrial robotics applications, motion planning, and robot simulation."
+    tech: ["ROS", "Python", "C++", "Gazebo"]
+    github: "https://github.com/felipeg17/ros-industrial-examples"
+    featured: true
+
+  - name: "Motion Planners Benchmark"
+    period: "2020-2021"
+    description: "Comparative benchmark of sampling-based motion planners (RRT, PRM, etc.) for bin picking manipulation tasks in industrial robotics."
+    tech: ["Python", "C++", "ROS", "MoveIt"]
+    publication: "Benchmark of Sampling Based Motion Planners"
+    featured: false
+
+teaching:
+  - name: "Programming Fundamentals Course (UNAL)"
+    period: "2023-Present"
+    description: "Complete Python programming course materials covering fundamentals, OOP, data structures, and practical projects. 114 GitHub stars."
+    tech: ["Python", "Jupyter", "GitHub", "Education"]
+    github: "https://github.com/fegonzalez7/pdc_unal_clase1"
+    stars: 114
+    featured: true
+
+  - name: "Object-Oriented Programming Materials"
+    period: "2024-Present"
+    description: "Advanced OOP concepts with Python, design patterns, and best practices. Multiple course repositories with 60-80 stars each."
+    tech: ["Python", "OOP", "Design Patterns"]
+    github: "https://github.com/fegonzalez7"
+    stars: 60
+    featured: true
+
+  - name: "Robotics Course Materials"
+    period: "2022-Present"
+    description: "Industrial robotics, ROS, kinematics, and control theory materials for university courses."
+    tech: ["ROS", "Python", "MATLAB", "Robot Studio"]
+    github: "https://github.com/fegonzalez7/rob_unal_clase2"
+    stars: 64
+    featured: true
+
+legacy:
+  - name: "Offline Trajectory Optimization with PSO"
+    period: "2018-2019"
+    description: "Master's thesis implementing Particle Swarm Optimization algorithm to create collision-free trajectories for ABB IRB 140 industrial robot."
+    tech: ["MATLAB", "PSO", "Robotics", "Optimization"]
+    publication: "MSc Thesis - UNAL"
+    featured: false
+
+  - name: "3D Laser Scanner for Tank Calibration"
+    period: "2014-2017"
+    company: "Colsein"
+    description: "Co-designed, built, and commissioned a 3D laser scanner for fuel tank gauging, achieving millimeter-resolution 3D models."
+    tech: ["Python", "C", "Point Cloud Processing", "Solidworks"]
+    featured: false
+
+  - name: "Delta Parallel Robot"
+    period: "2013"
+    description: "Bachelor's thesis designing a delta parallel robot mechanism with detailed mechanical and control system design."
+    tech: ["Solidworks", "MATLAB", "Mechatronics"]
+    publication: "BSc Thesis - UNAL"
+    featured: false
+
+  - name: "Apple Classifier with Neural Networks"
+    period: "2012"
+    description: "Computer vision system using neural networks for automated apple classification by quality."
+    tech: ["Python", "Computer Vision", "Neural Networks"]
+    featured: false

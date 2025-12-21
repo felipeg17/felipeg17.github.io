@@ -1,0 +1,32 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
+
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="keywords" content="AI developer, GenAI, RAG systems, Python developer, FastAPI, OpenAI, Machine Learning, Robotics, Software Engineer, Colombia, Universidad Nacional">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- Jekyll SEO Tag -->
+  {% seo %}
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css">
+
+  <!-- RSS Feed -->
+  {% feed_meta %}
+</head>

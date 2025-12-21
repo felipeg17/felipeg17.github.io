@@ -1,0 +1,420 @@
+---
+layout: page
+title: Projects
+---
+
+<div class="projects-page">
+  <p class="intro">
+    A selection of my work spanning AI development, robotics research, and educational materials.
+    From personal side projects exploring GenAI to professional work in enterprise systems and academic research in robotics.
+  </p>
+
+  <!-- Personal Side Projects -->
+  <section class="project-section">
+    <h2>Personal Side Projects</h2>
+    <p>Open-source tools and experiments exploring AI, RAG systems, and educational software.</p>
+
+    <div class="project-grid">
+      {% for project in site.data.projects.personal %}
+        {% if project.featured %}
+        <div class="project-card">
+          <h3>{{ project.name }}</h3>
+          <p class="project-meta">
+            {{ project.period }}
+            {% if project.stars %} • ⭐ {{ project.stars }} stars{% endif %}
+          </p>
+          <p>{{ project.description }}</p>
+
+          <div class="project-tech">
+            {% for tech in project.tech %}
+              <span class="tech-badge-small">{{ tech }}</span>
+            {% endfor %}
+          </div>
+
+          {% if project.github %}
+            <a href="{{ project.github }}" class="project-link" target="_blank">View on GitHub →</a>
+          {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Academic Projects -->
+  <section class="project-section">
+    <h2>Academic & Research Projects</h2>
+    <p>Robotics research, motion planning, reinforcement learning, and open-source contributions.</p>
+
+    <div class="project-grid">
+      {% for project in site.data.projects.academic %}
+        {% if project.featured %}
+        <div class="project-card">
+          <h3>{{ project.name }}</h3>
+          <p class="project-meta">
+            {{ project.period }}
+            {% if project.stars %} • ⭐ {{ project.stars }} stars{% endif %}
+          </p>
+          <p>{{ project.description }}</p>
+
+          <div class="project-tech">
+            {% for tech in project.tech %}
+              <span class="tech-badge-small">{{ tech }}</span>
+            {% endfor %}
+          </div>
+
+          {% if project.github %}
+            <a href="{{ project.github }}" class="project-link" target="_blank">View on GitHub →</a>
+          {% endif %}
+          {% if project.publication %}
+            <br><small class="publication-note"><em>Publication: {{ project.publication }}</em></small>
+          {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Professional Projects -->
+  <section class="project-section">
+    <h2>Professional Work</h2>
+    <p>AI and software development projects from Globant, Seguros Bolivar, and Colsein.</p>
+
+    <div class="project-grid">
+      {% for project in site.data.projects.professional %}
+        {% if project.featured %}
+        <div class="project-card">
+          <h3>{{ project.name }}</h3>
+          <p class="project-meta">
+            {{ project.period }}
+            {% if project.company %} • {{ project.company }}{% endif %}
+          </p>
+          <p>{{ project.description }}</p>
+
+          <div class="project-tech">
+            {% for tech in project.tech %}
+              <span class="tech-badge-small">{{ tech }}</span>
+            {% endfor %}
+          </div>
+
+          {% if project.github %}
+            <a href="{{ project.github }}" class="project-link" target="_blank">View on GitHub →</a>
+          {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Teaching Projects -->
+  <section class="project-section">
+    <h2>Teaching & Educational Materials</h2>
+    <p>Open-source course materials used by hundreds of students at Universidad Nacional and beyond.</p>
+
+    <div class="project-grid">
+      {% for project in site.data.projects.teaching %}
+        {% if project.featured %}
+        <div class="project-card">
+          <h3>{{ project.name }}</h3>
+          <p class="project-meta">
+            {{ project.period }}
+            {% if project.stars %} • ⭐ {{ project.stars }} stars{% endif %}
+          </p>
+          <p>{{ project.description }}</p>
+
+          <div class="project-tech">
+            {% for tech in project.tech %}
+              <span class="tech-badge-small">{{ tech }}</span>
+            {% endfor %}
+          </div>
+
+          {% if project.github %}
+            <a href="{{ project.github }}" class="project-link" target="_blank">View on GitHub →</a>
+          {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Earlier Work -->
+  <section class="project-section">
+    <h2>Earlier Work (2013-2019)</h2>
+    <p>Previous research and development projects in robotics and mechatronics.</p>
+
+    <!-- PSO Path Planning -->
+    <div class="legacy-project">
+      <h3>Offline Trajectory Optimization with PSO</h3>
+      <p class="project-meta">2018-2019 • MSc Thesis - UNAL</p>
+      <p>
+        Implemented Particle Swarm Optimization algorithm to create collision-free trajectories for ABB IRB 140 industrial robot.
+        The code was developed in MATLAB and connection to the robot used postprocessed RAPID programming.
+      </p>
+      <div class="legacy-images">
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/XvZ8CyPN/Screenshot-from-2022-03-02-10-10-58.png" alt="PSO Test Function">
+          <p class="image-caption">Test function for the PSO</p>
+        </div>
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/90HJVFJm/Screenshot-from-2022-03-02-10-09-34.png" alt="Particles Evolution">
+          <p class="image-caption">Particles path evolution</p>
+        </div>
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/Rh1G05Dc/Screenshot-from-2022-03-02-10-10-05.png" alt="Generated Path">
+          <p class="image-caption">PSO generated path</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3D Laser Scanner -->
+    <div class="legacy-project">
+      <h3>3D Laser Scanner for Tank Calibration</h3>
+      <p class="project-meta">2014-2017 • Colsein</p>
+      <p>
+        Co-designed, built, and commissioned a 3D laser scanner for fuel tank gauging in less than 18 months.
+        Achieved millimeter-resolution 3D models for 8 tanks. The scanner was partially funded by the Colombian
+        Institute for Science "Colciencias".
+      </p>
+      <div class="legacy-images">
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/gJ4KQLM8/Screenshot-from-2022-03-01-11-11-35.png" alt="Tank Gauging">
+          <p class="image-caption">Tank gauging process</p>
+        </div>
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/Pxd4SQMd/Screenshot-from-2022-03-01-11-11-49.png" alt="Point Cloud">
+          <p class="image-caption">Tank point cloud representation</p>
+        </div>
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/JzBP0nnC/Screenshot-from-2022-03-01-11-11-16.png" alt="Scanner">
+          <p class="image-caption">Final laser scanner</p>
+        </div>
+      </div>
+      <div class="legacy-video">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/ttKnkRN15Gs"
+          title="3D Laser Scanner Demo" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Delta Robot -->
+    <div class="legacy-project">
+      <h3>Delta Parallel Robot</h3>
+      <p class="project-meta">2013 • BSc Thesis - UNAL</p>
+      <p>
+        Designed a delta parallel robot mechanism with detailed mechanical and control system design.
+        The robot dimensions were obtained using a basic optimization algorithm that maximized the workspace.
+        Mechanical loads analysis using NX Nastran allowed optimal motor and controller selection.
+      </p>
+      <div class="legacy-images">
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/ryQhY3b3/Screenshot-from-2022-03-01-11-10-14.png" alt="Delta Design">
+          <p class="image-caption">Delta robot final design</p>
+        </div>
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/wTMWKFYv/Screenshot-from-2022-03-01-11-10-00.png" alt="Workspace">
+          <p class="image-caption">Delta robot workspace</p>
+        </div>
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/28t0CvCx/Screenshot-from-2022-03-01-11-09-17.png" alt="Components">
+          <p class="image-caption">Delta robot components</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apple Classifier -->
+    <div class="legacy-project">
+      <h3>Apple Classifier with Neural Networks</h3>
+      <p class="project-meta">2012</p>
+      <p>
+        Computer vision system using neural networks for automated apple classification by quality.
+        Developed using OpenCV for segmentation and neural networks for classification.
+      </p>
+      <div class="legacy-images">
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/pT2LfBcD/manzanas.png" alt="Apple Segmentation">
+          <p class="image-caption">Apple segmentation ROI</p>
+        </div>
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/zvHZKbNC/nn.png" alt="Neural Network">
+          <p class="image-caption">Neural Network classification</p>
+        </div>
+        <div class="legacy-image">
+          <img src="https://i.postimg.cc/6Tss0W6D/dataset.png" alt="Dataset">
+          <p class="image-caption">Apples labeling</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+/* Match home page styling */
+.projects-page {
+  max-width: 100%;
+}
+
+.intro {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #34495e;
+  margin: 0 0 40px 0;
+  text-align: justify;
+}
+
+.project-section {
+  margin: 50px 0;
+}
+
+.project-section h2 {
+  font-size: 20px;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.project-section > p {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.project-card h3 {
+  font-size: 16px;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.project-meta {
+  font-size: 12px;
+  color: #7f8c8d;
+  margin: 5px 0 12px 0;
+}
+
+.project-card p {
+  font-size: 13px;
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+.project-tech {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.publication-note {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+/* Legacy Projects Styling */
+.legacy-project {
+  margin: 40px 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.legacy-project:last-child {
+  border-bottom: none;
+}
+
+.legacy-project h3 {
+  font-size: 16px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.legacy-project p {
+  font-size: 13px;
+  color: #34495e;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 18px;
+}
+
+.legacy-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.legacy-image {
+  text-align: center;
+}
+
+.legacy-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.image-caption {
+  font-size: 13px;
+  color: #7f8c8d;
+  margin-top: 8px;
+  font-style: italic;
+  text-align: center !important;
+}
+
+.legacy-video {
+  margin: 30px 0;
+}
+
+.legacy-video iframe {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .legacy-images {
+    grid-template-columns: 1fr;
+  }
+
+  .legacy-video iframe {
+    height: 250px;
+  }
+}
+</style>
