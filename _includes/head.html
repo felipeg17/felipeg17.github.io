@@ -1,5 +1,5 @@
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   {% if site.google_analytics %}
@@ -14,8 +14,7 @@
 
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="author" content="{{ site.author.name }}">
   <meta name="keywords" content="AI developer, GenAI, RAG systems, Python developer, FastAPI, OpenAI, Machine Learning, Robotics, Software Engineer, Colombia, Universidad Nacional">
@@ -26,7 +25,4 @@
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css">
-
-  <!-- RSS Feed -->
-  {% feed_meta %}
 </head>

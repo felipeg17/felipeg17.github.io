@@ -165,30 +165,4 @@ title: Home
     </div>
   </section>
 
-  <!-- Recent Blog Posts -->
-  <section class="recent-posts">
-    <h3>Latest from the Blog</h3>
-    {% assign sorted_posts = site.posts | sort: 'date' | reverse %} {% if
-    sorted_posts.size > 0 %}
-    <div class="blog-preview-grid">
-      {% for post in sorted_posts limit:2 %}
-      <article class="blog-preview-card">
-        <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
-        <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
-        <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-        <a href="{{ post.url | relative_url }}" class="read-more"
-          >Read more →</a
-        >
-      </article>
-      {% endfor %}
-    </div>
-    <div class="view-all-posts">
-      <a href="{{ site.baseurl }}/blog/" class="btn btn-secondary"
-        >View All Posts</a
-      >
-    </div>
-    {% else %}
-    <p>No blog posts yet. Check back soon!</p>
-    {% endif %}
-  </section>
 </div>

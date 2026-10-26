@@ -7,7 +7,6 @@ description: >-
   University lecturer in Python and Robotics at Universidad Nacional de Colombia.
 baseurl: ""
 url: "https://felipeg17.github.io"
-permalink: /blog/:year/:month/:title/
 
 # Author info
 author:
@@ -19,7 +18,6 @@ author:
   linkedin: felipegonzalezroldan
   youtube: felipeg17
   location: Bogotá, Colombia
-  phone: +57 319 256 8436
 
 # Build settings
 markdown: kramdown
@@ -31,22 +29,10 @@ kramdown:
     block:
       line_numbers: false
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:title/
-
-# Pagination
-paginate: 10
-paginate_path: "/blog/page:num/"
-
 # Plugins
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
 
 # Exclude from processing
 exclude:
@@ -57,16 +43,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
-  - legacy/
 
 # Default front matter
 defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Felipe Gonzalez"
   - scope:
       path: ""
       type: "pages"
