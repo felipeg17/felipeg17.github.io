@@ -61,8 +61,8 @@ I'm Felipe Gonzalez Roldan, a technology professional bridging the worlds of sof
 
 ## Current Work
 
-### Globant (Sep 2025 - Present)
-**SSr. Python Developer**
+### Globant (Sep 2025 - Aug 2026)
+**Sr. Python Developer**
 
 Software Engineer for Verily Life Sciences, working with Python, Golang, GCP, and modern testing practices.
 
