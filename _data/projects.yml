@@ -114,13 +114,6 @@ legacy:
     publication: "MSc Thesis - UNAL"
     featured: false
 
-  - name: "3D Laser Scanner for Tank Calibration"
-    period: "2014-2017"
-    company: "Colsein"
-    description: "Co-designed, built, and commissioned a 3D laser scanner for fuel tank gauging, achieving millimeter-resolution 3D models."
-    tech: ["Python", "C", "Point Cloud Processing", "Solidworks"]
-    featured: false
-
   - name: "Delta Parallel Robot"
     period: "2013"
     description: "Bachelor's thesis designing a delta parallel robot mechanism with detailed mechanical and control system design."
